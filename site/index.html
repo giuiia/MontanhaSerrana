@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chalés Montanha Serrana | Chalé Romântico em Monte Verde, MG</title>
+  <meta name="description" content="Chalé com lareira e hidromassagem em Monte Verde. Refúgio a dois na Serra da Mantiqueira, a minutos do centro. Reserve direto.">
+  <meta name="keywords" content="chalé em Monte Verde, pousada em Monte Verde, chalé romântico Monte Verde, chalé com hidromassagem Monte Verde, chalé com lareira Monte Verde, onde ficar em Monte Verde">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Chalés Montanha Serrana | Monte Verde, MG">
+  <meta property="og:description" content="Chalé com lareira, hidromassagem e café da manhã incluso. Refúgio a dois na Serra da Mantiqueira.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://chalesmontanhaserrana.com.br">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon placeholder -->
+  <link rel="icon" href="img/logo-marca.png" type="image/png">
+</head>
+<body>
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header id="header">
+  <a href="#inicio" class="logo" aria-label="Chalés Montanha Serrana — página inicial">
+    <img src="img/logo-horizontal-creme.png" alt="Chalés Montanha Serrana">
+  </a>
+
+  <nav aria-label="Navegação principal">
+    <ul class="main-nav">
+      <li><a href="#chale">O Chalé</a></li>
+      <li><a href="#diferenciais">Diferenciais</a></li>
+      <li><a href="#cafe">Café da Manhã</a></li>
+      <li><a href="#galeria">Galeria</a></li>
+      <li><a href="#monte-verde">Monte Verde</a></li>
+    </ul>
+  </nav>
+
+  <a href="https://hbook.hsystem.com.br/Booking?companyId=6a610490402a0836c9e12146" class="btn-reservar" target="_blank" rel="noopener">Reserve Agora</a>
+
+  <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false" aria-controls="mobileNav">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<!-- Menu mobile -->
+<nav id="mobileNav" aria-label="Menu mobile" role="dialog" aria-modal="true">
+  <button class="mobile-close" id="mobileClose" aria-label="Fechar menu">✕</button>
+  <a href="#chale" class="mobile-nav-link">O Chalé</a>
+  <a href="#diferenciais" class="mobile-nav-link">Diferenciais</a>
+  <a href="#cafe" class="mobile-nav-link">Café da Manhã</a>
+  <a href="#galeria" class="mobile-nav-link">Galeria</a>
+  <a href="#monte-verde" class="mobile-nav-link">Monte Verde</a>
+  <a href="#reservas" class="mobile-nav-link">Reservas</a>
+</nav>
+
+<!-- Barra mobile inferior -->
+<div class="mobile-bar">
+  <a href="https://hbook.hsystem.com.br/Booking?companyId=6a610490402a0836c9e12146" class="bar-reserve" target="_blank" rel="noopener">Reserve Agora</a>
+  <a href="https://wa.me/5535999841913?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Chal%C3%A9s%20Montanha%20Serrana%20e%20consultar%20a%20disponibilidade%20para%20uma%20hospedagem%20em%20Monte%20Verde." class="bar-wa" target="_blank" rel="noopener">WhatsApp</a>
+</div>
+
+<!-- ============================================================
+     HERO
+     ============================================================ -->
+<section id="inicio" aria-label="Banner principal">
+  <div id="hero">
+    <!-- Vídeo banner -->
+    <video
+      class="hero-bg hero-video"
+      src="img/banner.mp4"
+      autoplay
+      muted
+      loop
+      playsinline
+      aria-hidden="true"
+    ></video>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <p class="hero-eyebrow">Monte Verde · Serra da Mantiqueira</p>
+      <h1 class="hero-h1">Monte Verde, na<br>medida certa<br>para dois.</h1>
+      <div class="hero-bar" aria-hidden="true"></div>
+      <p class="hero-sub">Chalé com lareira, hidromassagem e a tranquilidade da montanha — a poucos minutos do centro de Monte Verde.</p>
+      <div class="hero-ctas">
+        <a href="https://hbook.hsystem.com.br/Booking?companyId=6a610490402a0836c9e12146" class="hero-btn-primary" target="_blank" rel="noopener">RESERVE AGORA</a>
+        <a href="https://wa.me/5535999841913?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Chal%C3%A9s%20Montanha%20Serrana%20e%20consultar%20a%20disponibilidade%20para%20uma%20hospedagem%20em%20Monte%20Verde." class="hero-btn-wa" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.12 1.524 5.854L0 24l6.334-1.507A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.878 0-3.63-.497-5.142-1.367l-.37-.22-3.76.895.95-3.668-.24-.378A9.96 9.96 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          FALE CONOSCO
+        </a>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div class="hero-scroll" aria-hidden="true">
+      <span>scroll</span>
+      <div class="hero-vline"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     POR QUE ESCOLHER
+     ============================================================ -->
+<section id="porque" aria-label="Por que escolher o Montanha Serrana">
+  <div class="container">
+    <div class="porque-inner">
+      <span class="eyebrow eyebrow-verde reveal">Por que escolher</span>
+      <h2 class="porque-titulo reveal delay-1">Chalés Montanha Serrana</h2>
+      <p class="reveal delay-2">Localizado em Monte Verde, o Chalés Montanha Serrana oferece uma experiência de hospedagem confortável e tranquila, cercada pela natureza da Serra da Mantiqueira. A poucos minutos do centro, o chalé conta com lareira, hidromassagem e estrutura completa para uma estadia confortável e momentos de descanso.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     O CHALÉ
+     ============================================================ -->
+<section id="chale" aria-label="O Chalé">
+  <div class="container">
+
+    <div class="chale-split">
+      <div class="chale-text reveal">
+        <span class="eyebrow eyebrow-verde">O Chalé</span>
+        <h2 class="chamada">Tudo o que vocês precisam para desacelerar.</h2>
+        <p class="abertura">Um espaço pensado a dois: cama queen size, lareira, hidromassagem e a privacidade de um chalé só seu.</p>
+      </div>
+      <div class="chale-img reveal delay-1">
+        <img src="img/ochale.jpg" alt="Interior do chalé — lareira e cama queen" style="width:100%;height:100%;object-fit:cover;border-radius:12px;">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIÊNCIA & DIFERENCIAIS
+     ============================================================ -->
+<section id="diferenciais" aria-label="Diferenciais">
+  <div class="container">
+    <div class="diferenciais-header reveal">
+      <span class="eyebrow eyebrow-creme">Por que o Montanha Serrana</span>
+      <h2>Pensado para que vocês<br>só precisem chegar.</h2>
+    </div>
+
+    <div class="diferenciais-grid">
+
+      <div class="diferencial reveal">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B59150" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 2c0 6-6 8-6 14a6 6 0 0012 0c0-6-6-8-6-14z"/><path d="M12 12c0 3-2 4-2 7a2 2 0 004 0c0-3-2-4-2-7z"/></svg>
+        <h3>Lareira</h3>
+        <p>Para aproveitar o clima de montanha com ainda mais aconchego — noites mais frias ganham outro significado aqui.</p>
+      </div>
+
+      <div class="diferencial reveal delay-1">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B59150" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6L9 3.5a1.5 1.5 0 013 0V6"/><path d="M4 10h16v4a6 6 0 01-12 0v-4z"/><path d="M2 10h20"/><path d="M6 20l-2 2M18 20l2 2"/></svg>
+        <h3>Hidromassagem</h3>
+        <p>Um momento só de vocês para relaxar e desacelerar — inclusa na estadia, disponível quando quiserem.</p>
+      </div>
+
+      <div class="diferencial reveal delay-2">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B59150" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 4v16M2 8h18a2 2 0 012 2v6H2"/><path d="M6 8v-1a2 2 0 012-2h8a2 2 0 012 2v1"/></svg>
+        <h3>Cama Queen + lençol térmico</h3>
+        <p>Conforto para noites aconchegantes em Monte Verde — cama queen com lençol térmico para o frio da Serra.</p>
+      </div>
+
+      <div class="diferencial reveal">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B59150" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 9l9-7 9 7v11a2 2 0 01-2 2H5a2 2 0 01-2-2z"/><path d="M9 22V12h6v10"/></svg>
+        <h3>Varanda</h3>
+        <p>Um espaço para respirar, contemplar e aproveitar o clima da Serra — tomar um café com a vista da manhã.</p>
+      </div>
+
+      <div class="diferencial reveal delay-1">
+        <!-- Pata (pet friendly) -->
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B59150" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><ellipse cx="12" cy="17" rx="5" ry="3.5"/><circle cx="7.5" cy="10.5" r="1.5"/><circle cx="16.5" cy="10.5" r="1.5"/><circle cx="10" cy="7.5" r="1.5"/><circle cx="14" cy="7.5" r="1.5"/></svg>
+        <h3>Pet Friendly</h3>
+        <p>Seu companheiro também pode viajar com vocês, mediante combinado prévio.</p>
+        <span class="nota">Taxa adicional aplicável — consulte via WhatsApp.</span>
+      </div>
+
+      <div class="diferencial reveal delay-2">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#B59150" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.55a11 11 0 0114.08 0"/><path d="M1.42 9a16 16 0 0121.16 0"/><path d="M8.53 16.11a6 6 0 016.95 0"/><circle cx="12" cy="20" r="1" fill="#B59150"/></svg>
+        <h3>Wi-Fi Gratuito</h3>
+        <p>Para se conectar quando quiser — e desconectar quando precisar. A montanha também é isso.</p>
+      </div>
+
+    </div><!-- /diferenciais-grid -->
+
+    <!-- Comodidades complementares -->
+    <div class="amenities-strip reveal">
+      <span class="amenity-tag">Até 2 hóspedes</span>
+      <span class="amenity-tag">Lençol térmico</span>
+      <span class="amenity-tag">Ducha a gás</span>
+      <span class="amenity-tag">Frigobar</span>
+      <span class="amenity-tag">Smart TV 42"</span>
+      <span class="amenity-tag">Aquecedor</span>
+      <span class="amenity-tag">Mesa para refeições</span>
+      <span class="amenity-tag">Banheiro privativo</span>
+      <span class="amenity-tag">Cesta de café inclusa</span>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CAFÉ DA MANHÃ
+     ============================================================ -->
+<section id="cafe" aria-label="Café da Manhã">
+  <div class="container">
+    <div class="cafe-grid">
+
+      <div class="cafe-text reveal">
+        <span class="eyebrow eyebrow-creme">Incluso na estadia</span>
+        <h2>Café da manhã<br>no seu chalé.</h2>
+        <p>Comece o dia com calma. A cesta de café da manhã está incluída na sua estadia e é entregue diretamente no seu chalé, para vocês aproveitarem a manhã no próprio ritmo — sem sair, sem horário fixo de salão.</p>
+        <div class="cafe-destaque">
+          Café da manhã incluso — entregue no seu chalé.
+        </div>
+      </div>
+
+      <div class="cafe-fotos reveal delay-1">
+        <div class="cafe-foto-a ph" data-ph="foto — cesta de café" role="img" aria-label="Cesta de café da manhã — foto em breve"></div>
+        <div class="cafe-foto-b ph" data-ph="foto — manhã na varanda" role="img" aria-label="Manhã na varanda — foto em breve"></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     EXPERIÊNCIA A DOIS + MONTE VERDE (seção unificada)
+     ============================================================ -->
+<section id="experiencia" aria-label="Experiência a dois e localização">
+
+  <!-- Foto grande à esquerda + texto à direita -->
+  <div class="exp-split">
+    <div class="exp-foto">
+      <img src="img/experienciaadois.jpg" alt="Experiência a dois no chalé" style="width:100%;height:100%;object-fit:cover;">
+    </div>
+    <div class="exp-texto">
+      <span class="eyebrow eyebrow-verde reveal">Experiência a dois</span>
+      <h2 class="reveal delay-1">Monte Verde combina<br>com momentos a dois.</h2>
+      <p class="reveal delay-2">Lareira acesa, hidro pronta, a porta fechada só para vocês. Monte Verde tem esse jeito de deixar tudo mais lento — e o chalé foi feito para que vocês aproveitem cada parte disso, sem pressa.</p>
+      <a href="https://hbook.hsystem.com.br/Booking?companyId=6a610490402a0836c9e12146" class="btn-primary reveal delay-3" target="_blank" rel="noopener">VER DISPONIBILIDADE</a>
+    </div>
+  </div>
+
+  <!-- Monte Verde flui na mesma section -->
+  <div id="monte-verde">
+    <div class="container">
+      <div class="mv-grid">
+
+        <div class="mv-text reveal">
+          <span class="eyebrow eyebrow-verde">Onde estamos</span>
+          <h2>Perto do centro, longe da pressa.</h2>
+          <p>Monte Verde é conhecida pelo clima de montanha, pela gastronomia de inverno e pelas trilhas na Serra da Mantiqueira — e o chalé está posicionado bem no meio disso: perto o suficiente do centro para ir a pé, longe o suficiente para manter o sossego.</p>
+        </div>
+
+        <!-- Mapa -->
+        <div class="mv-map-wrap reveal delay-1">
+          <iframe
+            src="https://maps.google.com/maps?q=-22.8683161,-46.0451207&z=17&output=embed"
+            title="Localização — Chalés Montanha Serrana"
+            allowfullscreen
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ============================================================
+     GALERIA
+     ============================================================ -->
+<section id="galeria" aria-label="Galeria de fotos">
+  <div class="container">
+    <div class="galeria-header reveal">
+      <span class="eyebrow eyebrow-verde">Galeria</span>
+      <h2>O chalé em imagens.</h2>
+    </div>
+
+    <div class="galeria-grid">
+      <div class="galeria-item tall reveal">
+        <img src="img/galeria1.jpg" alt="Galeria — chalé" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="galeria-item reveal delay-1">
+        <img src="img/galeria2.jpg" alt="Galeria — chalé" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="galeria-item reveal delay-2">
+        <img src="img/galeria3.jpg" alt="Galeria — chalé" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="galeria-item reveal delay-1">
+        <img src="img/galeria4.jpg" alt="Galeria — chalé" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="galeria-item tall reveal delay-2">
+        <img src="img/galeria5.jpg" alt="Galeria — chalé" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+      <div class="galeria-item reveal delay-3">
+        <img src="img/galeria6.jpg" alt="Galeria — chalé" style="width:100%;height:100%;object-fit:cover;">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     RESERVAS
+     ============================================================ -->
+<section id="reservas" aria-label="Reserve sua estadia">
+  <div class="container">
+    <div class="reservas-inner">
+
+      <!-- Avaliações -->
+      <div class="ratings-row reveal">
+        <div class="rating-item">
+          <span class="rating-score">9,5</span>
+          <span class="rating-label">Booking</span>
+        </div>
+        <div class="rating-sep" aria-hidden="true"></div>
+        <div class="rating-item">
+          <span class="rating-score">9,4</span>
+          <span class="rating-label">Hoteis.com</span>
+        </div>
+        <div class="rating-sep" aria-hidden="true"></div>
+        <div class="rating-item">
+          <span class="rating-score">4/5</span>
+          <span class="rating-label">Tripadvisor</span>
+        </div>
+      </div>
+
+      <!-- Depoimento -->
+      <div class="depoimento reveal delay-1">
+        <blockquote>"O chalé é pura elegância e conforto, tudo pensado para lazer e descanso."</blockquote>
+        <cite>Daniele T. · dez/2024 · Booking</cite>
+      </div>
+
+      <!-- CTA -->
+      <span class="eyebrow eyebrow-verde reveal delay-2">Monte Verde está esperando por vocês</span>
+      <h2 class="reservas-chamada reveal delay-2">Seu refúgio na Serra<br>da Mantiqueira.</h2>
+      <p class="reservas-sub reveal delay-3">Consulte disponibilidade, escolha as datas e reserve diretamente.</p>
+      <div class="reservas-ctas reveal delay-3">
+        <a href="https://hbook.hsystem.com.br/Booking?companyId=6a610490402a0836c9e12146" class="btn-primary" target="_blank" rel="noopener">VER DISPONIBILIDADE</a>
+        <a href="https://wa.me/5535999841913?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Chal%C3%A9s%20Montanha%20Serrana%20e%20consultar%20a%20disponibilidade%20para%20uma%20hospedagem%20em%20Monte%20Verde." class="btn-wa" target="_blank" rel="noopener">
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.12 1.524 5.854L0 24l6.334-1.507A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.878 0-3.63-.497-5.142-1.367l-.37-.22-3.76.895.95-3.668-.24-.378A9.96 9.96 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          TIRAR UMA DÚVIDA
+        </a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer aria-label="Rodapé">
+  <div class="container">
+    <div class="footer-top">
+
+      <!-- Coluna 1: Marca -->
+      <div class="footer-brand">
+        <img src="img/logo-vertical-creme.png" alt="Chalés Montanha Serrana" class="footer-logo">
+        <p class="footer-tagline">Refúgio a dois na Serra da Mantiqueira. Monte Verde, MG.</p>
+      </div>
+
+      <!-- Coluna 2: Navegação -->
+      <div class="footer-nav-col">
+        <h4>O Chalé</h4>
+        <ul>
+          <li><a href="#chale">Estrutura</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#cafe">Café da Manhã</a></li>
+          <li><a href="#galeria">Galeria</a></li>
+          <li><a href="#monte-verde">Monte Verde</a></li>
+          <li><a href="#reservas">Reservas</a></li>
+        </ul>
+      </div>
+
+      <!-- Coluna 3: Contato -->
+      <div class="footer-contact-col">
+        <h4>Contato</h4>
+
+        <a href="https://wa.me/5535999841913" class="fc-link" target="_blank" rel="noopener" aria-label="WhatsApp (35) 99984-1913">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="rgba(245,238,227,0.6)" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.12 1.524 5.854L0 24l6.334-1.507A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.878 0-3.63-.497-5.142-1.367l-.37-.22-3.76.895.95-3.668-.24-.378A9.96 9.96 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+          (35) 99984-1913
+        </a>
+
+        <a href="https://www.instagram.com/chalesmontanhaserrana/" class="fc-link" target="_blank" rel="noopener" aria-label="Instagram @chalesmontanhaserrana">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(245,238,227,0.6)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+          @chalesmontanhaserrana
+        </a>
+
+        <a href="https://hbook.hsystem.com.br/Booking?companyId=6a610490402a0836c9e12146" class="fc-link" target="_blank" rel="noopener">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="rgba(245,238,227,0.6)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+          Reserve Online
+        </a>
+
+        <address class="fc-addr">
+          R. do Engenho, 230<br>
+          Recanto do Selado<br>
+          Camanducaia – MG, 37653-000
+        </address>
+      </div>
+
+    </div><!-- /footer-top -->
+
+    <div class="footer-bottom">
+      <p>© 2026 Chalés Montanha Serrana. Todos os direitos reservados.</p>
+      <div class="footer-legal">
+        <a href="#">Política de Privacidade</a>
+        <a href="#">Termos de Uso</a>
+      </div>
+    </div>
+
+  </div>
+</footer>
+
+<!-- ============================================================
+     WHATSAPP FLUTUANTE
+     ============================================================ -->
+<a
+  href="https://wa.me/5535999841913?text=Ol%C3%A1!%20Gostaria%20de%20saber%20mais%20sobre%20os%20Chal%C3%A9s%20Montanha%20Serrana%20e%20consultar%20a%20disponibilidade%20para%20uma%20hospedagem%20em%20Monte%20Verde."
+  class="wa-float"
+  target="_blank"
+  rel="noopener"
+  aria-label="Fale conosco pelo WhatsApp"
+>
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.126.555 4.12 1.524 5.854L0 24l6.334-1.507A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.878 0-3.63-.497-5.142-1.367l-.37-.22-3.76.895.95-3.668-.24-.378A9.96 9.96 0 012 12c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10z"/></svg>
+</a>
+
+<!-- JS -->
+<script src="js/main.js"></script>
+</body>
+</html>
