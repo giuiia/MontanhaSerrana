@@ -98,4 +98,44 @@
   window.addEventListener('resize', checkWaFloat, { passive: true });
   checkWaFloat();
 
+  /* ── GALERIA / CARROSSEL — O CHALÉ ─────────────────────── */
+  const galleryTrack = document.getElementById('chaleGalleryTrack');
+  if (galleryTrack) {
+    const slides = Array.from(galleryTrack.querySelectorAll('.chale-slide'));
+    const dots = Array.from(document.querySelectorAll('.chale-gallery-dot'));
+    const prevBtn = document.getElementById('chaleGalleryPrev');
+    const nextBtn = document.getElementById('chaleGalleryNext');
+    let current = 0;
+    let autoplayTimer = null;
+
+    function goTo(index) {
+      current = (index + slides.length) % slides.length;
+      slides.forEach((s, i) => s.classList.toggle('is-active', i === current));
+      dots.forEach((d, i) => {
+        d.classList.toggle('is-active', i === current);
+        d.setAttribute('aria-selected', i === current ? 'true' : 'false');
+      });
+    }
+    function next() { goTo(current + 1); }
+    function prev() { goTo(current - 1); }
+    function startAutoplay() {
+      stopAutoplay();
+      autoplayTimer = setInterval(next, 5000);
+    }
+    function stopAutoplay() {
+      if (autoplayTimer) clearInterval(autoplayTimer);
+    }
+
+    if (nextBtn) nextBtn.addEventListener('click', () => { next(); startAutoplay(); });
+    if (prevBtn) prevBtn.addEventListener('click', () => { prev(); startAutoplay(); });
+    dots.forEach((dot) => {
+      dot.addEventListener('click', () => {
+        goTo(parseInt(dot.dataset.index, 10));
+        startAutoplay();
+      });
+    });
+
+    startAutoplay();
+  }
+
 })();
